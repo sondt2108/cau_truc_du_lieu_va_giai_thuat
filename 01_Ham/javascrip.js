@@ -168,7 +168,7 @@ function ktChuoi(s1, s2, s3, s4, s5) {
         return "chuổi "+s3+" không tồn tại trong chuổi "+ s5;
     }
 
-     
+     ///
     
     
     
