@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="https://github.com/hohieuit/javascript-coban/blob/master/de%20bai/1_function.txt">
+    <script src="javascrip.js"></script>
+    <title>Bài tập hàm</title>
+</head>
+<body>
+    <div id="ketQua">
+    </div>
+    <script>
+        var nodeKetQua = document.getElementById('ketQua');
+        var HTML = "";
+        HTML = HTML + `Kết quả tổng 2 số 3 và 4 là : ${tinhTong(3,4)}</p>`;
+
+        HTML = HTML + `Kết quả hiệu 2 số 5 và 2 là : ${hieu(5,2)}</p>`;
+
+        HTML = HTML + `Kết quả tích 2 số 5 và 2 là : ${nhan(5,2)}</p>`;
+
+        HTML = HTML + `Kết quả thương 2 số 5 và 5 là : ${thuong(5,5)}</p>`;
+
+        HTML = HTML + `Kết quả thuong 2 số 10 và 0 là : ${chia(10,0)}</p>`;
+
+        HTML = HTML + `Kết quả thuong 2 số 0 và 5 là : ${chiaHaiSo(0,5)}</p>`;
+
+        HTML = HTML + `Kết quả bình phương của 5 là : ${binhPhuong(5)}</p>`;
+        
+        HTML = HTML + `Kết quả bình phương của 2 số 5 và 7 là : ${binhPhuong2So(5,7)}</p>`;
+
+        HTML = HTML + `Số lớn hơn trong hai số 5 và 7 là : ${timSoLon(5,7)}</p>`;
+
+        HTML = HTML + `Số lớn hơn trong hai số 5 và 7 là : ${timSoBe(5,7)}</p>`;
+
+        HTML = HTML + `trung bình của 2 số 5 và 7 là : ${tinhTB(5,7)}</p>`;
+
+        HTML = HTML + `kết quả chia 2 số 7 và 6 là : ${chiaLayDu(7,6)}</p>`;
+
+        HTML = HTML + `Kiểm tra chia hết 2 số 6 và 6 : ${kiemTraChiaHet(6,6)}</p>`;
+
+        HTML = HTML + `Kiểm tra chia hết : ${ktChiaHet(6,6)}</p>`;
+
+        HTML = HTML + `Kiểm tra chia hết : ${ktChia(6,7)}</p>`;
+
+        HTML = HTML + `Chu vi hình chữ nhật cạnh = 3 và cạnh = 4 là : ${chuViHCN(3,4)}</p>`;
+
+        HTML = HTML + `Diện tích hình chữ nhật cạnh = 3 và cạnh = 4 là : ${dienTichHCN(3,4)}</p>`;
+
+        HTML = HTML + `chu vi hình tròn có bán kính = 3 là : ${chuViHinhTron(3)}</p>`;
+
+        HTML = HTML + `diện tích hình tròn có bán kính = 3 là : ${dienTichHinhTron(3)}</p>`;
+
+        HTML = HTML + `nối chuổi : ${noiChuoi("xin","chào")}</p>`;
+
+        HTML = HTML + `nối chuổi : ${noiChuoiS("xin","chào","mọi","người","hihi")}</p>`;
+
+        HTML = HTML + `nối chuổi : ${noiChuoiInHoa("xin","chào","mọi","người","hihi")}</p>`;
+
+        HTML = HTML + `nối chuổi : ${kt("xin chào","xin")}</p>`;
+
+        HTML = HTML + `độ dài chuổi : ${tinhDoDaiChuoi("xin","chao","moi","nguoi","hihi")}</p>`;
+
+        HTML = HTML + `cắt chuổi từ vị trí 1 đến 3 : ${catChuoi("xin","chao","moi","nguoi","hihi")}</p>`;
+
+        HTML = HTML + `nối chuổi : ${ktChuoi("moi","nguoi","xin chao moi nguoi","cc","moi nguoi xin chao moi nguoi cc")}</p>`;
+
+        nodeKetQua.innerHTML = HTML;
+    </script>
+
+    
+</body>
+</html>
