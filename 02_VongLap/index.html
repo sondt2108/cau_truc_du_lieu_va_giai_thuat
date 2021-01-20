@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="javascrip.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="ketQua">
+
+    </div>
+    
+    <script>
+        
+        var nodeKetQua = document.getElementById('ketQua');
+        var HTML = "";
+        HTML = HTML + `lặp : ${showMessage("Hôm nay trời đẹp quá",5)}</p>`;
+
+        HTML = HTML + `tính tổng từ 1 đến 100 : ${sum(100)}</p>`;
+
+        HTML = HTML + `tính tổng từ 2 đến 76 : ${sumAToB(20,76)}</p>`;
+
+        HTML = HTML + `tính tổng các số lẻ từ 1 đến 100 : ${sumLe(1,100)}</p>`;
+
+        HTML = HTML + `5 số lẻ nhỏ nhất : ${soLeNN(5)}</p>`;
+
+        HTML = HTML + `3 số lẻ nhỏ nhất : ${soLeMToN(102,3)}</p>`;
+
+        HTML = HTML + `KT số nguyên tố : ${kiemTraSNT(4)}</p>`;
+
+        HTML = HTML + `xuất 4 số nguyên tố  nhỏ nhất: ${soNT(4)}</p>`;
+
+        HTML = HTML + `xuất 10 số nguyên tố từ 1 : ${soNTMtoN(1,10)}</p>`;
+
+
+
+
+        nodeKetQua.innerHTML = HTML;
+
+    </script>
+</body>
+</html>
