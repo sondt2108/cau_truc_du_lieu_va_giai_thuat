@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="javascrip.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="ketQua">
+    </div>
+    <script>
+        var nodeKetQua = document.getElementById('ketQua');
+        var HTML = "";
+
+        HTML = HTML + `danh sách các số nhỏ hơn 7 : ${getLessThan(7)}</p>`;
+
+        HTML = HTML + `danh sách tất cả các số lẻ nhỏ hơn 10 : ${getOddlessThan(10)}</p>`;
+
+        HTML = HTML + `vị trí phần tử đầu tiên bóng rổ là : ${findFirst()}</p>`;
+
+        HTML = HTML + `vị trí phần tử cuối cùng bóng rổ là : ${findLast()}</p>`;
+
+        HTML = HTML + `vị trí cần tìm của chuổi 'bóng rổ' là : ${find()}</p>`;
+
+        HTML = HTML + `sau khi thêm chuổi 'bóng rổ' là : ${add()}</p>`;
+
+        var arr = ["bóng chuyền", "bóng rổ", "bóng đá"];
+
+        HTML = HTML + `thêm một phần tử vào mảng, nhưng nếu phần tử đó đã tồn tại thì ko thêm nữa: ${addIfNotExist(arr,"bóng rổ")}</p>`;
+
+        var mang = ["bóng chuyền", "bóng rổ", "bóng đá","bóng chuyền"];
+        var chuoiCanXoa = "bóng chuyền";
+
+        HTML = HTML + `sau xóa phần tử bóng chuyền khỏi mảng : ${Delete(mang, chuoiCanXoa)}</p>`;
+
+        nodeKetQua.innerHTML = HTML;
+    </script>
+    
+</body>
+</html>

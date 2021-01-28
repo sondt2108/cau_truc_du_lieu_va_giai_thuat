@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="javascrip.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="ketQua">
+    </div>
+    <script>
+        var nodeKetQua = document.getElementById('ketQua');
+        var HTML = "";
+
+        HTML = HTML + `tổng : ${sum(3)}</p>`;
+
+        HTML = HTML + `Giai thừa : ${giaiThua(3)}</p>`;
+
+        HTML = HTML + `Giai thừa : ${fibonaci()}</p>`;
+        nodeKetQua.innerHTML = HTML;
+    </script>
+    
+</body>
+</html>
